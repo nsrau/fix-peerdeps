@@ -1,0 +1,30 @@
+{
+  "name": "fix-peerdeps",
+  "version": "1.0.0",
+  "description": "A script to check and add missing peer dependencies in a Node.js project.",
+  "main": "bin/check-peer.js",
+  "bin": {
+    "fix-peerdeps": "./bin/check-peer.js"
+  },
+  "dependencies": {},
+  "scripts": {
+    "fix-peerdeps": "node bin/check-peer.js"
+  },
+  "keywords": [
+    "peer-dependencies",
+    "npm",
+    "pnpm",
+    "workspace",
+    "monorepo"
+  ],
+  "author": "nsrau",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nsrau/fix-peerdeps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nsrau/fix-peerdeps/issues"
+  },
+  "homepage": "https://github.com/nsrau/fix-peerdeps#readme",
+  "license": "MIT"
+}
