@@ -1,14 +1,14 @@
 {
-  "name": "fix-peerdeps",
+  "name": "fix-peerds",
   "version": "1.0.0",
   "description": "A script to check and add missing peer dependencies in a Node.js project.",
-  "main": "bin/check-peer.js",
+  "main": "bin/fix-peerds.js",
   "bin": {
-    "fix-peerdeps": "./bin/check-peer.js"
+    "fix-peerds": "./bin/fix-peerds.js"
   },
   "dependencies": {},
   "scripts": {
-    "fix-peerdeps": "node bin/check-peer.js"
+    "fix-peerds": "node bin/fix-peerds.js"
   },
   "keywords": [
     "peer-dependencies",
@@ -20,11 +20,11 @@
   "author": "nsrau",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nsrau/fix-peerdeps.git"
+    "url": "https://github.com/nsrau/fix-peerds.git"
   },
   "bugs": {
-    "url": "https://github.com/nsrau/fix-peerdeps/issues"
+    "url": "https://github.com/nsrau/fix-peerds/issues"
   },
-  "homepage": "https://github.com/nsrau/fix-peerdeps#readme",
+  "homepage": "https://github.com/nsrau/fix-peerds#readme",
   "license": "MIT"
 }
