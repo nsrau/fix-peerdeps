@@ -1,6 +1,6 @@
 {
   "name": "fix-peerds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A script to check and add missing peer dependencies in a Node.js project.",
   "main": "bin/fix-peerds.js",
   "bin": {

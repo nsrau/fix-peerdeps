@@ -12,10 +12,10 @@ This script works for both single-package projects and monorepo workspaces.
 
 ## Installation
 
-Install the package globally to use the `fix-peerdeps` command:
+Install the package globally to use the `fix-peerds` command:
 
 ```bash
-npm install -g fix-peerdeps
+npm install -g fix-peerds
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ new library has peer dependencies, and if any are missing from your `package.jso
 ```json
 {
   "scripts": {
-    "postinstall": "fix-peerdeps"
+    "postinstall": "fix-peerds"
   }
 }
 ```
@@ -37,7 +37,7 @@ new library has peer dependencies, and if any are missing from your `package.jso
 You can manually run the peer dependency check with:
 
 ```bash
-fix-peerdeps
+fix-peerds
 ```
 
 The script will analyze the installed libraries and check if the `peerDependencies` of each one 
@@ -48,7 +48,7 @@ are listed in your project's `package.json`. If any are missing, it will automat
 If you are working in a monorepo (multi-package workspace), you can check peer dependencies across all sub-packages:
 
 ```bash
-fix-peerdeps -ws
+fix-peerds -ws
 ```
 
 This will scan the workspace configuration (such as `pnpm-workspace.yaml` or `package.json` with 
@@ -60,10 +60,10 @@ This will scan the workspace configuration (such as `pnpm-workspace.yaml` or `pa
 pnpm add some-library
 # Automatically checks for peer dependencies
 
-fix-peerdeps
+fix-peerds
 # Manually checks for peer dependencies
 
-fix-peerdeps -ws
+fix-peerds -ws
 # Checks peer dependencies across workspace projects
 ```
 
