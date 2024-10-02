@@ -7,7 +7,7 @@ This script works for both single-package projects and monorepo workspaces.
 
 - Automatically checks for missing peer dependencies after adding a new library.
 - Can be run manually via a custom command to check all dependencies.
-- Supports workspace mode (monorepos) using `-w` flag.
+- Supports workspace mode (monorepos) using `-ws` flag.
 - Zero external dependencies.
 
 ## Installation
@@ -48,7 +48,7 @@ are listed in your project's `package.json`. If any are missing, it will automat
 If you are working in a monorepo (multi-package workspace), you can check peer dependencies across all sub-packages:
 
 ```bash
-fix-peerdeps -w
+fix-peerdeps -ws
 ```
 
 This will scan the workspace configuration (such as `pnpm-workspace.yaml` or `package.json` with 
@@ -63,7 +63,7 @@ pnpm add some-library
 fix-peerdeps
 # Manually checks for peer dependencies
 
-fix-peerdeps -w
+fix-peerdeps -ws
 # Checks peer dependencies across workspace projects
 ```
 
