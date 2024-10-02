@@ -24,6 +24,13 @@ npm install -g fix-peerdeps
 
 After adding a new library with `pnpm add <library>`, the script will automatically verify if the 
 new library has peer dependencies, and if any are missing from your `package.json`, they will be added.
+```json
+{
+  "scripts": {
+    "postinstall": "fix-peerdeps"
+  }
+}
+```
 
 ### Manually check peer dependencies
 
@@ -46,19 +53,6 @@ fix-peerdeps -w
 
 This will scan the workspace configuration (such as `pnpm-workspace.yaml` or `package.json` with 
 `workspaces` defined) and run the peer dependency check in each sub-package.
-
-## Automatically Check Peer Dependencies After Installation
-To automatically check and add missing peer dependencies after installing packages, you can add a postinstall script to your `package.json`. This script will run the `fix-peerdeps` command after every installation.
-Open your package.json file.  
-Add the postinstall script under the scripts section.
-```json
-{
-  "scripts": {
-    "postinstall": "fix-peerdeps"
-  }
-}
-```
-
 
 ## Example
 
